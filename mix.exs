@@ -1,7 +1,7 @@
 defmodule Slacker.Mixfile do
   use Mix.Project
 
-  @version "0.0.3"
+  @version "0.0.4"
 
   def project do
     [app: :slacker,
@@ -11,7 +11,7 @@ defmodule Slacker.Mixfile do
      start_permanent: Mix.env == :prod,
      deps: deps(Mix.env),
      description: "A bot library for the Slack chat service.",
-     package: package]
+     package: package()]
   end
 
   def application do
