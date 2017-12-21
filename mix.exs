@@ -24,10 +24,12 @@ defmodule Slacker.Mixfile do
   end
 
   defp deps(_env) do
-    [{:websocket_client, github: "jeremyong/websocket_client"},
-     {:httpoison, "~> 0.9"},
-     {:poison, "~> 3.0"},
-     {:inflex, "~> 1.0.0"}]
+    [
+      {:websocket_client, github: "jeremyong/websocket_client"},
+      {:httpoison, "~> 0.13"},
+      {:poison, "~> 3.1"},
+      {:inflex, "~> 1.9"},
+    ]
   end
 
   defp package do
